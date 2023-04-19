@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+body > header {
+    background-color: rgb(74, 19, 177);
+    padding: 16px 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+header li{
+display: inline;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin-left: 16px;
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+width: 1366px;
+margin: 0 auto;
+}
+
+.articles {
+    display: flex; /*Ocupar aréa disponivel*/
+    flex-wrap: wrap; 
+    justify-content: space-between; /*Alinha os elementos no espaço*/
+}
+
+.articles article img {
+    width: 100%;
+    border-radius: 2% ;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0; /*Borda cima,baixo e lados*/
+}
+section h2,
+.articles article {
+    margin-bottom: 16px; /*Margem inferior*/
+}
+
+.articles article h3 {
+margin-top: 16px;
+margin-bottom: 16px;
+}
+
+.articles article a {
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 3px; /*Arredonda as bordas*/
+    display: inline-block; /*Ajusta  ao bloco*/
+    text-decoration: none; /*Desabilita anderline (efeitos no texto)*/
+    margin-top: 8px; /*Margem topo do botão*/
+}
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3{
+    font-size:  24px;
+}
+
+section h2 {
+    font-size: 36px;
+}
+
+#esportes {
+    background-color:rgb(175, 212, 168);
+}
+
+#economy {
+    background-color:rgba(255, 244, 89, 0.664);
+}
+
+#entretenimento {
+    background-color:rgba(243, 94, 131, 0.808);
+}
+
+#tecnologia {
+    background-color:rgba(207, 192, 250, 0.808);
+}
+
+#esportes .articles article a {
+    background-color: rgb(69, 138, 52);
+}
+
+#economy .articles article a {
+    background-color: rgb(250, 152, 23);
+}
+
+#entretenimento article a {
+    background-color: rgb(24, 22, 153);
+}
+
+#tecnologia article a {
+    background-color: rgb(74, 19, 177);
+}
